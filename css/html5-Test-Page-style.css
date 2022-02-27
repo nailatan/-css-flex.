@@ -1,0 +1,21 @@
+html {
+  font-family: sans-serif;
+}
+article h2 {
+  text-decoration: underline;
+}
+nav > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+nav > ul > li {
+  flex: 1;
+}
+nav a:hover {
+  border: 1px solid #111;
+}
+blockquote {
+  border: 2px inset #ccc;
+}
