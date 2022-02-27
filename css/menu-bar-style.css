@@ -1,65 +1,69 @@
-
 body {
-    margin: 0;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    /* position: relative; */
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 main {
-    margin: 6em 1.2em 10em 1.2em;
-    height: 90vh;
+  margin: 6em 1.2em 10em 1.2em;
+  flex: 1;
 }
 nav {
-    background-color: #495057;
-    color:#adb5bd;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 2em;
-    width: 100vw;
-    position:fixed;
+  background-color: #495057;
+  color: #adb5bd;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 2em;
+  width: 100vw;
+  position: fixed;
 }
 nav > ul {
-    display: flex;
-    list-style-type: none;
-    justify-content: flex-start;
-    margin: 0px;
-    padding: 0px;
+  display: flex;
+  list-style-type: none;
+  justify-content: flex-start;
+  margin: 0px;
+  padding: 0px;
 }
 nav > ul > li {
-    padding: .9em .5em;
+  padding: 0.9em 0.5em;
+}
+nav > ul > li:last-child {
+  padding: 0.9em 0.5em;
+  justify-content: flex-end;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  position: relative;
 }
 li > input {
-    border-style: groove;
-    width: 25em;
-    height: 2em;
-    position: fixed;
-    right: 1em;
+  border-style: groove;
+  width: 20em;
+  height: 2em;
+  left: 0em;
 }
 nav a {
-    text-decoration: none;
-    color:#adb5bd;
+  text-decoration: none;
+  color: #adb5bd;
 }
 nav a:hover {
-    color:#dee2e6;
+  color: #dee2e6;
 }
 nav > ul > :not(li:last-child, li:first-child):hover {
-    background-color: #6c757d;
+  background-color: #6c757d;
 }
-/* nav > ul > li:first-child:hover {
-    background-color: #495057;
-} */
+
 footer {
-    background-color: #495057;
-    bottom: 0;
-    width: 100vw;
-    height: 3em;
-    color:#adb5bd;
-    position: fixed;
+  background-color: #495057;
+  bottom: 0;
+  margin-bottom: 0;
+  width: 100vw;
+  height: 3em;
+  color: #adb5bd;
+  position: relative;
 }
 
 footer p {
-    margin-left: 1.2em;
-    font-size: 1.1em;
+  margin-left: 1.2em;
+  font-size: 1.1em;
 }
-
